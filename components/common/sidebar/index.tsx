@@ -9,7 +9,7 @@ import { FaRegFolder } from "react-icons/fa";
 
 const Index = () => {
     return (
-        <div className="md:w-full bg-gray-100">
+        <div className="bg-gray-100">
             <BottomBar
                 home={<AiOutlineHome className="w-6 h-6" />}
                 download={<FaDownload className="w-5 h-5" />}

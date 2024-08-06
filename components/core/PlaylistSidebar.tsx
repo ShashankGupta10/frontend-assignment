@@ -10,8 +10,8 @@ const PlaylistSidebar = () => {
 
     return (
         <div className="bg-[#0A0A0A] text-white w-96 h-screen absolute right-0 top-0 hidden xl:block rounded-l-xl px-4 py-2">
-            <div className='flex flex-col gap-3 p-2 h-full w-full'>
-                <div className='mt-1 ml-2 block md:hidden' onClick={() => setToggle(!toggle)}>
+            <div className='flex flex-col gap-2 p-2 h-full w-full'>
+                <div className='ml-2 block md:hidden' onClick={() => setToggle(!toggle)}>
                     <X />
                 </div>
                 <div className='flex justify-between h-fit w-full px-3'>
@@ -25,13 +25,13 @@ const PlaylistSidebar = () => {
                     </div>
                 </div>
 
-                <div className='mt-3'>
+                <div>
                     <MusicSection title="Recently Played" playlist={playlist} />
                 </div>
-                <div className='mt-3'>
+                <div>
                     <MusicSection title="My Playlist" playlist={Myplaylist} />
                 </div>
-                <div className='bg-slate-100 mt-1 cursor-pointer text-black text-center font-semibold capitalize p-2 py-3 rounded-md hover:bg-white hover:text-xl transition-all'>
+                <div className='bg-slate-100 cursor-pointer text-black text-center font-semibold capitalize p-2 py-3 rounded-md hover:bg-white hover:text-xl transition-all'>
                     <p>Create New Playlist</p>
                 </div>
             </div>
