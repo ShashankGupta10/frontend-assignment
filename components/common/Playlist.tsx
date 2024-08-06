@@ -14,7 +14,6 @@ const PlayList = ({ play }: any) => {
                     <p className='text-xs font-semibold text-slate-500'>{play.artist}</p>
                 </div>
             </div>
-
             <p className='text-xs text-slate-500'>{play.time}</p>
         </div>
 

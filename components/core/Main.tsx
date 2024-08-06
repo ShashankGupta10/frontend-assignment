@@ -1,15 +1,14 @@
 "use client";
 import { data } from '@/constants/main';
-import { ChevronLeft, ChevronRight, Ellipsis, Menu, Search } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Ellipsis, Search } from 'lucide-react';
 import React, { useState } from 'react';
 import TrendingSections from '../core/SongSections';
 
 const Main = ({ className }: { className: string }) => {
-    const [value, setValue] = useState<boolean>(true);
     const [toggle, setToggle] = useState<boolean>(true);
 
     return (
-        <div className={`example ${className} flex xl:mr-96 pb-[100px] flex-col overflow-y-scroll  h-screen text-white px-7 bg-[#18191B]`}>
+        <div className={`main ${className} flex xl:mr-96 pb-[100px] flex-col overflow-y-scroll  h-screen text-white px-7 bg-[#18191B]`}>
             <div className='flex justify-between gap-5 p-2 pt-5 items-center'>
                 <div className='hidden md:flex'>
                     <ChevronLeft />
