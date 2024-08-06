@@ -11,15 +11,14 @@ const Sidebar = ({ home, download, collections, favourites, localFiles, discover
         setIsCollapsed((prev) => !prev);
     };
     return (
-        <div className={`md:h-screen ${isCollapsed ? "md:w-16" : "md:w-64"} transition-all duration-500 ease-in-out`}>
             <div
-                className={`hidden md:flex md:h-full flex-grow flex-col overflow-y-auto rounded-br-lg rounded-tr-lg bg-white shadow-md ${isCollapsed ? "md:w-16" : "md:w-64"}`}
+                className={`transition-all duration-500 ease-in-out bg-[#0A0A0A] hidden xl:flex xl:h-screen flex-grow flex-col overflow-y-auto rounded-br-lg rounded-tr-lg shadow-md ${isCollapsed ? "xl:w-16" : "xl:w-80"}`}
                 ref={sidebarRef}
             >
                 <div className="p-4 flex justify-between">
                     <Image src={logo} className="cursor-pointer" alt="SK logo" width={30} height={30} onClick={() => isCollapsed && setIsCollapsed(!isCollapsed)} />
                     <MdKeyboardArrowLeft
-                        className={`h-6 w-6 cursor-pointer transition-transform duration-500 ${isCollapsed ? "rotate-180" : ""}`}
+                        className={`h-6 w-6 cursor-pointer text-white transition-transform duration-500 ${isCollapsed ? "rotate-180" : ""}`}
                         onClick={handleCollapse}
                     />
                 </div>
@@ -88,7 +87,6 @@ const Sidebar = ({ home, download, collections, favourites, localFiles, discover
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
 
