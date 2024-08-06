@@ -31,8 +31,7 @@ const PlaylistSidebar = () => {
                 <div className='mt-3'>
                     <MusicSection title="My Playlist" playlist={Myplaylist} />
                 </div>
-
-                <div className='bg-white mt-1 cursor-pointer text-black text-center font-semibold capitalize p-2 py-3 rounded-md'>
+                <div className='bg-slate-100 mt-1 cursor-pointer text-black text-center font-semibold capitalize p-2 py-3 rounded-md hover:bg-white hover:text-xl transition-all'>
                     <p>Create New Playlist</p>
                 </div>
             </div>

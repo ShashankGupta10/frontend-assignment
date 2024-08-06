@@ -1,61 +1,53 @@
 export const playlist = [
-    {
-        id:1,
-        title:"Shape of You",
-        artist:"Ed Sheeran",
-        img:"/playlist/shapeofyou.jpg",
-        time:"3 min ago",
-    },
-    {
-        id:3,
-        title:"Blinding Lights",
-        artist:"The Weeknd",
-        img:"/playlist/lights.jpg",
-        time:"5 min ago",
-    },
-    {
-        id:4,
-        title:"Someone Like You",
-        artist:"Adele",
-        img:"/playlist/someone.jpg",
-        time:"1 min ago",
-    },
-    {
-        id:5,
-        title:"Uptown Funk",
-        artist:"Mark Ronson",
-        img:"/playlist/uptown.jpg",
-        time:"10 min ago",
-    },
-]
+  {
+    id: 1,
+    title: "Shape of You",
+    artist: "Ed Sheeran",
+    img: "https://i.scdn.co/image/ab67616d00001e02ba5db46f4b838ef6027e6f96",
+    time: "3 min ago",
+  },
+  {
+    id: 3,
+    title: "Blinding Lights",
+    artist: "The Weeknd",
+    img: "https://i.scdn.co/image/ab67616d00001e028863bc11d2aa12b54f5aeb36",
+    time: "5 min ago",
+  },
+  {
+    id: 4,
+    title: "Someone Like You",
+    artist: "Adele",
+    img: "https://i.scdn.co/image/ab67616d00001e02164feb363334f93b6458d2a9",
+    time: "1 min ago",
+  },
+  {
+    id: 5,
+    title: "Uptown Funk",
+    artist: "Mark Ronson",
+    img: "https://i.scdn.co/image/ab67616d00001e02e419ccba0baa8bd3f3d7abf2",
+    time: "10 min ago",
+  },
+];
 export const Myplaylist = [
-    {
-        id:1,
-        title:"Doing you",
-        artist:"2 songs",
-        img:"/you.jpg",
-        time:"1 hours",
-    },
-    {
-        id:2,
-        title:"Burning memories",
-        artist:"21 songs",
-        img:"/playlist/buring.jpg",
-        time:"2 hours",
-    },
-    {
-        id:3,
-        title:"Love you",
-        artist:"69 songs",
-        img:"/playlist/loveyou.jpg",
-        time:"4 hour 30 min",
-    },
-    {
-        id:4,
-        title:"underrated",
-        artist:"18 songs",
-        img:"/playlist/underrated.png",
-        time:"30 min",
-    },
-
-]
+  {
+    id: 1,
+    title: "Liked Songs",
+    artist: "2 songs",
+    img: "https://misc.scdn.co/liked-songs/liked-songs-300.png",
+    time: "1 hours",
+  },
+  {
+    id: 2,
+    title: "Gym Songs",
+    artist: "21 songs",
+    img: "https://t.scdn.co/media/links/workout-274x274.png",
+    time: "2 hours",
+  },
+  {
+    id: 3,
+    title: "Sad Songs",
+    artist: "69 songs",
+    img: "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c09387c983967fbe361872406",
+    time: "4 hour 30 min",
+  },
+];

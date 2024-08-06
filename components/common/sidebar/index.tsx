@@ -1,30 +1,30 @@
 import BottomBar from "./BottomBar";
 import Sidebar from "./Sidebar";
-import HomeIcon from "@/public/images/sidebar/HomeIcon";
-import DownloadIcon from "@/public/images/sidebar/DownloadIcon";
-import CollectionsIcon from "@/public/images/sidebar/CollectionsIcon";
-import FavouritesIcon from "@/public/images/sidebar/FavouritesIcon";
-import LocalFilesIcon from "@/public/images/sidebar/LocalFilesIcon";
-import DiscoverIcon from "@/public/images/sidebar/DiscoverIcon";
+import { AiOutlineHome } from "react-icons/ai";
+import { RiCompassDiscoverLine } from "react-icons/ri";
+import { MdCollectionsBookmark } from "react-icons/md";
+import { FaRegHeart } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa";
+import { FaRegFolder } from "react-icons/fa";
 
 const Index = () => {
     return (
         <div className="md:w-full bg-gray-100">
             <BottomBar
-                home={<HomeIcon />}
-                download={<DownloadIcon />}
-                collections={<CollectionsIcon />}
-                favourites={<FavouritesIcon />}
-                localFiles={<LocalFilesIcon />}
-                discover={<DiscoverIcon />}
+                home={<AiOutlineHome className="w-6 h-6" />}
+                download={<FaDownload className="w-5 h-5" />}
+                collections={<MdCollectionsBookmark className="w-5 h-5" />}
+                favourites={<FaRegHeart className="w-5 h-5" />}
+                localFiles={<FaRegFolder className="w-5 h-5" />}
+                discover={<RiCompassDiscoverLine className="w-5 h-5" />}
             />
             <Sidebar
-                home={<HomeIcon />}
-                download={<DownloadIcon />}
-                collections={<CollectionsIcon />}
-                favourites={<FavouritesIcon />}
-                localFiles={<LocalFilesIcon />}
-                discover={<DiscoverIcon />}
+                home={<AiOutlineHome className="w-6 h-6" />}
+                download={<FaDownload className="w-5 h-5" />}
+                collections={<MdCollectionsBookmark className="w-5 h-5" />}
+                favourites={<FaRegHeart className="w-5 h-5" />}
+                localFiles={<FaRegFolder className="w-5 h-5" />}
+                discover={<RiCompassDiscoverLine className="w-5 h-5" />}
             />
         </div>
     );

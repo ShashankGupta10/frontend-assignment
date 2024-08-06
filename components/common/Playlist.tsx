@@ -4,10 +4,10 @@ import React from 'react'
 const PlayList = ({ play }: any) => {
 
     return (
-        <div className='flex justify-between items-center px-1'>
-            <div className='flex gap-2 capitalize'>
+        <div className='flex justify-between px-3 items-center hover:bg-gray-900 rounded-xl'>
+            <div className='flex gap-4 capitalize p-3 rounded-xl'>
                 <div>
-                    <Image src={"https://i.scdn.co/image/ab67616d00001e02e00b8a590bd56b7217372959"} alt='playlist' width={100} height={100} className='h-[50px] w-[50px] rounded object-cover' />
+                    <Image src={play.img} alt='playlist' width={100} height={100} className='h-[50px] w-[50px] rounded object-cover' />
                 </div>
                 <div className='flex flex-col justify-center '>
                     <p className='font-semibold text-slate-300'>{play.title}</p>

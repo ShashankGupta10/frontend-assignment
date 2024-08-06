@@ -8,25 +8,25 @@ const BottomBar = ({ home, download, collections, favourites, localFiles, discov
                     {home}
                 </a>
             </div>
-            <div className='flex flex-col justify-center items-center'><a href="#" className="py-4 text-gray-600 hover:text-indigo-600">
+            <div className='flex flex-col justify-center items-center'><a href="#" className="py-4 text-white hover:text-indigo-600">
                 {discover}
             </a>
             </div>
-            <div className='flex flex-col justify-center items-center'><a href="#" className="py-4 text-gray-600 hover:text-indigo-600">
+            <div className='flex flex-col justify-center items-center'><a href="#" className="py-4 text-white hover:text-indigo-600">
                 {collections}
             </a>
             </div>
             <div className='flex flex-col justify-center items-center'>
-                <a href="#" className="py-4 text-gray-600 hover:text-indigo-600">
+                <a href="#" className="py-4 text-white hover:text-indigo-600">
                     {download}
                 </a>
             </div>
-            <div className='flex flex-col justify-center items-center'><a href="#" className="py-4 text-gray-600 hover:text-indigo-600">
-                {download}
+            <div className='flex flex-col justify-center items-center'><a href="#" className="py-4 text-white hover:text-indigo-600">
+                {favourites}
             </a>
             </div>
             <div className='flex flex-col justify-center items-center'>
-                <a href="#" className="py-4 text-gray-600 hover:text-indigo-600">
+                <a href="#" className="py-4 text-white hover:text-indigo-600">
                     {localFiles}
                 </a>
             </div>
