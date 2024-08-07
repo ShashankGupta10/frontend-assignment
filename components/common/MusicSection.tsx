@@ -3,7 +3,7 @@ import PlayList from './Playlist'
 
 type MusicProps = {
     title: string;
-    playlist: any[]
+    playlist: PlayListType[]
 }
 
 const MusicSection = ({ title, playlist }: MusicProps) => {
@@ -14,12 +14,10 @@ const MusicSection = ({ title, playlist }: MusicProps) => {
                 <p className='text-sm text-slate-300'>See all</p>
             </div>
 
-            <div className='mt-3 flex flex-col gap-3'>
+            <div className='flex flex-col gap-1'>
                 {
-                    playlist.map((play: any) => (
-                        <div key={play.id} className='cursor-pointer'>
-                            <PlayList play={play} />
-                        </div>
+                    playlist.map((play: PlayListType, index) => (
+                        <PlayList play={play} key={index} />
                     ))
                 }
             </div>

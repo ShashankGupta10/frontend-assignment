@@ -1,5 +1,5 @@
 "use client"
-import { Myplaylist, playlist } from '@/constants/playlistSidebar'
+import { playlistItems } from '@/constants/playlistSidebar'
 import { BellIcon, ChevronDown, X } from 'lucide-react'
 import Image from 'next/image'
 import React, { useState } from 'react'
@@ -25,15 +25,12 @@ const PlaylistSidebar = () => {
                     </div>
                 </div>
 
-                <div>
-                    <MusicSection title="Recently Played" playlist={playlist} />
-                </div>
-                <div>
-                    <MusicSection title="My Playlist" playlist={Myplaylist} />
-                </div>
-                <div className='bg-slate-100 cursor-pointer text-black text-center font-semibold capitalize p-2 py-3 rounded-md hover:bg-white hover:text-xl transition-all'>
+                {playlistItems.map((item, index) => (
+                    <MusicSection key={index} title={item.title} playlist={item.data} />
+                ))}
+                <button className='bg-slate-100 text-black text-center font-semibold capitalize p-2 py-3 rounded-md hover:bg-white hover:text-xl transition-all'>
                     <p>Create New Playlist</p>
-                </div>
+                </button>
             </div>
         </div>
     )

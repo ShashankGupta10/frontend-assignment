@@ -14,9 +14,7 @@ const SearchSection = () => {
                 <Search className='mt-1 ml-2 text-slate-500' />
                 <input type='text' placeholder='Search' className='border-none outline-none rounded-full p-1 w-full' />
             </div>
-            <div className='cursor-pointer' onClick={() => setToggle(!toggle)}>
-                <Ellipsis />
-            </div>
+            <Ellipsis className='cursor-pointer' onClick={() => setToggle(!toggle)} />
         </div>
     )
 }

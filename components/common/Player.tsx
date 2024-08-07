@@ -13,9 +13,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function PlayBar() {
   const [hamburgerState, setHamburgerState] = useState(false);
-  const onClickHandler = () => {
-    setHamburgerState(true);
-  };
+
   return (
     <div className="md:absolute fixed inset-x-0 bottom-14 xl:bottom-0 z-10 flex justify-center items-center h-[10%] bg-zinc-900 rounded-t-xl text-white w-full ">
       <div className="lg:flex hidden w-[320px] h-full justify-center gap-x-10 items-center">
@@ -54,7 +52,7 @@ export default function PlayBar() {
               <IoClose className="text-white w-6 h-6 cursor-pointer" />
             </button>
           ) : (
-            <button onClick={onClickHandler} className="w-6 h-6 lg:hidden flex">
+            <button onClick={() => setHamburgerState(true)} className="w-6 h-6 lg:hidden flex">
               <RxHamburgerMenu className="w-full h-full text-white cursor-pointer" />
             </button>
           )}

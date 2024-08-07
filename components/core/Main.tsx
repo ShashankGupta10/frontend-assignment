@@ -1,24 +1,29 @@
 "use client";
 import { data } from '@/constants/main';
 import React from 'react';
-import TrendingSections from '../core/SongSections';
+import SongSections from '../core/SongSections';
 import Carousel from './Carousel';
 import SearchSection from '../common/SearchSection';
 
 const Main = ({ className }: { className: string }) => {
-
     const slides = [
         {
-            image: 'https://i.scdn.co/image/ab67616d00001e02ba5db46f4b838ef6027e6f96',
-            album: 'New Album',
+            image: 'https://i.pinimg.com/originals/45/d0/79/45d0790c293e5dba3077f4ad0c4826c6.gif',
+            album: 'The Viraris',
             title: 'The Second Step: Chapter one',
-            artist: 'Treasure',
+            artist: 'Ajaykumar Maurya',
         },
         {
-            image: '/other-image.jpg',
-            album: 'Another Album',
+            image: 'https://i.pinimg.com/736x/01/16/25/011625582e301feccdfbb065b3a8ac26.jpg',
+            album: 'My country',
             title: 'Another Step: Chapter two',
-            artist: 'Another Artist',
+            artist: 'Sumil Suthar',
+        },
+        {
+            image: 'https://i.pinimg.com/736x/01/16/25/011625582e301feccdfbb065b3a8ac26.jpg',
+            album: 'Workout motivation',
+            title: 'Another Step: Chapter three',
+            artist: 'Sarthak Tanpure',
         },
     ];
 
@@ -29,7 +34,7 @@ const Main = ({ className }: { className: string }) => {
             <div className='flex flex-col justify-center max-w-full mt-5'>
                 {
                     data.map((section, index) => (
-                        <TrendingSections key={index} TopHits={section.data} title={section.title} responsive={section.responsive} />
+                        <SongSections key={index} songs={section.data} title={section.title} responsive={section.responsive} />
                     ))
                 }
             </div>

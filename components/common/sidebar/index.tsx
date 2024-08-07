@@ -8,24 +8,42 @@ import { FaDownload } from "react-icons/fa";
 import { FaRegFolder } from "react-icons/fa";
 
 const Index = () => {
+    const sidebarItems = [
+        {
+            title: "Home",
+            icon: <AiOutlineHome className="w-6 h-6" />,
+            section: "Features"
+        },
+        {
+            title: "Discover",
+            icon: <RiCompassDiscoverLine className="w-6 h-6" />,
+            section: "Features"
+        },
+        {
+            title: "Collections",
+            icon: <MdCollectionsBookmark className="w-6 h-6" />,
+            section: "Features"
+        },
+        {
+            title: "Download",
+            icon: <FaDownload className="w-6 h-6" />,
+            section: "Library"
+        },
+        {
+            title: "Favourites",
+            icon: <FaRegHeart className="w-6 h-6" />,
+            section: "Library"
+        },
+        {
+            title: "Local Files",
+            icon: <FaRegFolder className="w-6 h-6" />,
+            section: "Library"
+        },
+    ];
     return (
         <div className="bg-gray-100">
-            <BottomBar
-                home={<AiOutlineHome className="w-6 h-6" />}
-                download={<FaDownload className="w-5 h-5" />}
-                collections={<MdCollectionsBookmark className="w-5 h-5" />}
-                favourites={<FaRegHeart className="w-5 h-5" />}
-                localFiles={<FaRegFolder className="w-5 h-5" />}
-                discover={<RiCompassDiscoverLine className="w-5 h-5" />}
-            />
-            <Sidebar
-                home={<AiOutlineHome className="w-6 h-6" />}
-                download={<FaDownload className="w-5 h-5" />}
-                collections={<MdCollectionsBookmark className="w-5 h-5" />}
-                favourites={<FaRegHeart className="w-5 h-5" />}
-                localFiles={<FaRegFolder className="w-5 h-5" />}
-                discover={<RiCompassDiscoverLine className="w-5 h-5" />}
-            />
+            <BottomBar sidebarItems={sidebarItems} />
+            <Sidebar sidebarItems={sidebarItems} />
         </div>
     );
 };

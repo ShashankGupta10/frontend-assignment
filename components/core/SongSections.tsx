@@ -1,9 +1,9 @@
 import React from 'react'
-import Trendingcard from './SongsCard'
+import SongsCard from './SongsCard'
 
 type TrendingProps = {
     title: string;
-    TopHits: {
+    songs: {
         id: number;
         img: string;
         title: string;
@@ -12,7 +12,7 @@ type TrendingProps = {
     responsive: boolean
 }
 
-const SongSections = ({ title, TopHits, responsive }: TrendingProps) => {
+const SongSections = ({ title, songs, responsive }: TrendingProps) => {
     return (
         <div className={`${responsive ? 'xl:hidden' : 'block'} flex flex-col`}>
             <div className='flex justify-between items-center mt-5'>
@@ -21,9 +21,9 @@ const SongSections = ({ title, TopHits, responsive }: TrendingProps) => {
             </div>
             <div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-3 items-center justify-center gap-2'>
                 {
-                    TopHits.map((list) => (
-                        <div key={list.id} className='cursor-pointer'>
-                            <Trendingcard list={list} />
+                    songs.map((song) => (
+                        <div key={song.id} className='cursor-pointer'>
+                            <SongsCard list={song} />
                         </div>
                     ))
                 }
