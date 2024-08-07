@@ -1,6 +1,6 @@
 import PlaylistSidebar from '@/components/core/PlaylistSidebar'
 import Sidebar from '@/components/common/sidebar'
-import Player from '@/components/common/player'
+import Player from '@/components/common/Player'
 import React from 'react'
 import MainSection from '@/components/core/Main'
 

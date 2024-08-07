@@ -1,40 +1,32 @@
 "use client";
 import { data } from '@/constants/main';
-import { ChevronLeft, ChevronRight, Ellipsis, Search } from 'lucide-react';
-import React, { useState } from 'react';
+import React from 'react';
 import TrendingSections from '../core/SongSections';
+import Carousel from './Carousel';
+import SearchSection from '../common/SearchSection';
 
 const Main = ({ className }: { className: string }) => {
-    const [toggle, setToggle] = useState<boolean>(true);
+
+    const slides = [
+        {
+            image: 'https://i.scdn.co/image/ab67616d00001e02ba5db46f4b838ef6027e6f96',
+            album: 'New Album',
+            title: 'The Second Step: Chapter one',
+            artist: 'Treasure',
+        },
+        {
+            image: '/other-image.jpg',
+            album: 'Another Album',
+            title: 'Another Step: Chapter two',
+            artist: 'Another Artist',
+        },
+    ];
 
     return (
-        <div className={`main ${className} flex xl:mr-96 pb-[100px] flex-col overflow-y-scroll  h-screen text-white px-7 bg-[#18191B]`}>
-            <div className='flex justify-between gap-5 p-2 pt-5 items-center'>
-                <div className='hidden md:flex'>
-                    <ChevronLeft />
-                    <ChevronRight />
-                </div>
-                <div className='w-full bg-white text-black rounded-full p-1 flex'>
-                    <Search className='mt-1 ml-2 text-slate-500' />
-                    <input type='text' placeholder='Search' className='border-none outline-none rounded-full p-1 w-full' />
-                </div>
-                <div className='cursor-pointer' onClick={() => setToggle(!toggle)}>
-                    <Ellipsis />
-                </div>
-            </div>
-            <div className="bg-[url('/back.jpg')] text-white h-[280px] mt-5 bg-no-repeat bg-cover bg-center rounded-xl">
-                <div className='flex justify-start h-full p-5'>
-                    <div className='h-full p-5 space-y-2'>
-                        <p className='text-xs'>New Album</p>
-                        <p className='md:text-5xl font-bold'>The Second Step: <br /> Chapter one</p>
-                        <p className='text-black/90 font-bold uppercase'>Treasure</p>
-                        <div className='flex'>
-                            <p className='bg-blue-600 text-center text-sm px-5 font-semibold py-2 rounded-md'>Listen Now</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className='flex flex-col justify-center max-w-full'>
+        <div className={`main ${className} flex xl:mr-96 pb-[100px] flex-col h-screen overflow-y-scroll text-white px-7 bg-[#18191B]`}>
+            <SearchSection />
+            <Carousel slides={slides} />
+            <div className='flex flex-col justify-center max-w-full mt-5'>
                 {
                     data.map((section, index) => (
                         <TrendingSections key={index} TopHits={section.data} title={section.title} responsive={section.responsive} />
