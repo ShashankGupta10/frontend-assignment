@@ -1,7 +1,7 @@
 
-# SuperKalam Music
+#  Music Assignment
 
-SuperKalam is a music streaming application designed with a sleek user interface for discovering and playing music. The project is built using React, Next.js, and Tailwind CSS.
+ is a music streaming application designed with a sleek user interface for discovering and playing music. The project is built using React, Next.js, and Tailwind CSS.
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
@@ -11,11 +11,11 @@ SuperKalam is a music streaming application designed with a sleek user interface
 
 ## Project Overview
 
-SuperKalam is a feature-rich music streaming application that allows users to explore and play music from various artists. The intuitive UI ensures a smooth user experience, making it easy to navigate through different sections like trending music, playlists, and more.
+ This app is a feature-rich music streaming application that allows users to explore and play music from various artists. The intuitive UI ensures a smooth user experience, making it easy to navigate through different sections like trending music, playlists, and more.
 
 ## Installation Instructions
 
-To set up SuperKalam on your local machine, follow these steps:
+To set up this repo on your local machine, follow these steps:
 
 1. **Clone the repository:**
    ```bash
@@ -32,12 +32,10 @@ To set up SuperKalam on your local machine, follow these steps:
 
 ## Usage Guide
 
-SuperKalam provides a user-friendly interface to browse and play music. Here’s a quick guide to get you started:
+ This project provides a user-friendly interface to browse and play music. Here’s a quick guide to get you started:
 
 -   **Play Music:** Click on any song from the playlist or trending section to start playing.
 -   **Responsive:** The platform is responsive for all screen sizes!
-
-
 
 
 ## Components Description
