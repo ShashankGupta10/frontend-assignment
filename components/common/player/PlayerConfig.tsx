@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import MusicContext from '@/context/MusicContext'
+import { useContext, useState } from 'react'
 import { FaRegHeart } from 'react-icons/fa'
 import { HiOutlineArrowPathRoundedSquare } from 'react-icons/hi2'
 import { IoClose, IoShuffle } from 'react-icons/io5'
 import { LuMic } from 'react-icons/lu'
-import { MdPlayCircleFilled } from 'react-icons/md'
+import { MdPauseCircleFilled, MdPlayCircleFilled } from 'react-icons/md'
 import { PiDevices, PiSkipBack, PiSkipForward } from 'react-icons/pi'
 import { RiShareLine } from 'react-icons/ri'
 import { RxHamburgerMenu } from 'react-icons/rx'
@@ -11,13 +12,21 @@ import { SlVolume1 } from 'react-icons/sl'
 
 const PlayerConfig = () => {
     const [hamburgerState, setHamburgerState] = useState<boolean>(false)
+    const { isPlaying, setIsPlaying, currentSong, setCurrentSong, currentAudioRef, setCurrentAudioRef } = useContext(MusicContext)
     return (
         <div className="w-[500px] pt-2 flex flex-col justify-center items-center h-full">
             <div className="flex w-full h-full justify-center items-center gap-x-7 md:gap-x-10">
                 <FaRegHeart className="w-6 h-6 lg:hidden flex cursor-pointer" />
                 <IoShuffle className="w-6 h-6 cursor-pointer" />
                 <PiSkipBack className="w-6 h-6 cursor-pointer" />
-                <MdPlayCircleFilled className="w-14 h-14 cursor-pointer" />
+                {!isPlaying ? <MdPlayCircleFilled className="w-14 h-14 cursor-pointer" onClick={() => {
+                    setIsPlaying(!isPlaying)
+                    currentAudioRef?.play()
+                }} /> : <MdPauseCircleFilled className="w-14 h-14 cursor-pointer" onClick={() => {
+                    setIsPlaying(!isPlaying)
+                    currentAudioRef?.pause()
+                }
+                } />}
                 <PiSkipForward className="w-6 h-6 cursor-pointer" />
                 <HiOutlineArrowPathRoundedSquare className="w-6 h-6 cursor-pointer" />
                 <div
