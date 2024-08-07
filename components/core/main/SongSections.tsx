@@ -1,5 +1,5 @@
 import React from 'react'
-import SongsCard from './SongsCard'
+import SongsCard from '../../common/songCard'
 
 type TrendingProps = {
     title: string;

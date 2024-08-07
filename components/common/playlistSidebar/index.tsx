@@ -3,7 +3,7 @@ import { playlistItems } from '@/constants/playlistSidebar'
 import { BellIcon, ChevronDown, X } from 'lucide-react'
 import Image from 'next/image'
 import React, { useState } from 'react'
-import MusicSection from '../common/MusicSection'
+import MusicSection from './MusicSection'
 
 const PlaylistSidebar = () => {
     const [toggle, setToggle] = useState<boolean>(true)

@@ -1,9 +1,9 @@
 "use client";
 import { data } from '@/constants/main';
 import React from 'react';
-import SongSections from '../core/SongSections';
+import SongSections from './SongSections';
 import Carousel from './Carousel';
-import SearchSection from '../common/SearchSection';
+import SearchSection from './SearchSection';
 
 const Main = ({ className }: { className: string }) => {
     const slides = [

@@ -1,8 +1,8 @@
-import PlaylistSidebar from '@/components/core/PlaylistSidebar'
+import PlaylistSidebar from '@/components/common/playlistSidebar'
 import Sidebar from '@/components/common/sidebar'
-import Player from '@/components/common/Player'
+import Player from '@/components/common/player/index'
 import React from 'react'
-import MainSection from '@/components/core/Main'
+import MainSection from '@/components/core/main'
 
 const page = () => {
     return (
