@@ -2,7 +2,7 @@
 import React, { useState, useRef } from 'react'
 import { MdKeyboardArrowLeft } from 'react-icons/md'
 import Image from 'next/image';
-import logo from "@/public/images/logo.jpeg";
+import logo from "@/public/logo.jpg";
 
 const Sidebar = ({ sidebarItems }: { sidebarItems: SidebarPropsType[] }) => {
     const [isCollapsed, setIsCollapsed] = useState(false);
@@ -19,7 +19,7 @@ const Sidebar = ({ sidebarItems }: { sidebarItems: SidebarPropsType[] }) => {
             <div className="p-4 flex justify-between">
                 <div className='flex gap-6'>
                     <Image src={logo} className="cursor-pointer" alt="SK logo" width={30} height={30} onClick={() => isCollapsed && setIsCollapsed(!isCollapsed)} />
-                    <span className='text-white'>SuperKalam</span>
+                    <span className='text-white'>Music App</span>
                 </div>
                 <MdKeyboardArrowLeft
                     className={`h-6 w-6 cursor-pointer text-white transition-transform duration-500 ${isCollapsed ? "rotate-180" : ""}`}
