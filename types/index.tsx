@@ -9,4 +9,5 @@ type PlayListType = {
     artist: string
     image: string
     time: string
+    audioURL: string | null
 };

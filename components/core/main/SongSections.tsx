@@ -8,6 +8,7 @@ type TrendingProps = {
         img: string;
         title: string;
         artist: string;
+        audioURL: string;
     }[],
     responsive: boolean
 }

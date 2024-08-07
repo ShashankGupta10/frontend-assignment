@@ -2,9 +2,12 @@ import Image from 'next/image'
 import React from 'react'
 
 const PlayList = ({ play }: { play: PlayListType }) => {
-
+    const playMusic = (url: string) => {
+        const audio = new Audio(url);
+        audio.play();
+    }
     return (
-        <div className='flex justify-between px-3 items-center hover:bg-gray-900 rounded-xl cursor-pointer'>
+        <div className='flex justify-between px-3 items-center hover:bg-gray-900 rounded-xl cursor-pointer' onClick={() => play.audioURL && playMusic(play.audioURL)}>
             <div className='flex gap-4 capitalize p-3 rounded-xl'>
                 <div>
                     <Image src={play.image} alt='playlist' width={100} height={100} className='h-[50px] w-[50px] rounded object-cover' />
