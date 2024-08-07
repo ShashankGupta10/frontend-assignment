@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# SuperKalam Music
 
-First, run the development server:
+SuperKalam is a music streaming application designed with a sleek user interface for discovering and playing music. The project is built using React, Next.js, and Tailwind CSS.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
+1. [Project Overview](#project-overview)
+2. [Installation Instructions](#installation-instructions)
+3. [Usage Guide](#usage-guide)
+4. [Components Description](#components-description)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+SuperKalam is a feature-rich music streaming application that allows users to explore and play music from various artists. The intuitive UI ensures a smooth user experience, making it easy to navigate through different sections like trending music, playlists, and more.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation Instructions
 
-## Learn More
+To set up SuperKalam on your local machine, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/ShashankGupta10/frontend-assignment.git
+   cd frontend-assignment` 
+2.  **Install dependencies:** Make sure you have [Node.js](https://nodejs.org/) installed, then run:
+    `npm install` 
+    
+3.  **Start the development server:**
+    `npm run dev` 
+    
+4.  **Open your browser:** Navigate to `http://localhost:3000` to see the application in action.
+    
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage Guide
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+SuperKalam provides a user-friendly interface to browse and play music. Here’s a quick guide to get you started:
 
-## Deploy on Vercel
+-   **Play Music:** Click on any song from the playlist or trending section to start playing.
+-   **Responsive:** The platform is responsive for all screen sizes!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## Components Description
+
+### Player
+
+The `Player` component manages the audio playback functionality. It includes play, pause and displays the current track's information.
+
+### PlaylistSidebar
+
+The `PlaylistSidebar` component displays a sidebar with the user's playlists. It allows users to navigate through different playlists and view their contents.
+
+### Sidebar
+
+The `Sidebar` component provides navigational links and can be collapsed or expanded. It includes links to different sections such as Home, Discover, Collections, and more.
+
+### SongCard
+
+The `SongCard` component displays individual songs in a card format. Each card includes the song's cover image, title, and artist. Clicking on a card will play the associated song.
+
+### Carousel
+
+The `Carousel` component renders a carousel of images with album information and transitions between them automatically. It enhances the UI by showcasing featured albums or songs.
+
+### SearchSection
+
+The `SearchSection` component includes a search bar that allows users to search for songs, artists, or albums.
+
+### SongSection
+
+The `SongSection` component is responsible for rendering different sections of songs, such as trending hits, top albums, and curated playlists. It uses the `SongCard` component to display individual songs.
