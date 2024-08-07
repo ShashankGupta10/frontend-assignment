@@ -7,7 +7,7 @@ import React from 'react'
 import MainSection from '@/components/core/main'
 import MusicContext from '@/context/MusicContext'
 
-const page = () => {
+const Home = () => {
     const [isPlaying, setIsPlaying] = useState<boolean>(false)
     const [currentSong, setCurrentSong] = useState<string>("")
     const [currentAudioRef, setCurrentAudioRef] = useState<HTMLAudioElement | null>(null)
@@ -23,4 +23,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Home

@@ -5,7 +5,6 @@ import React, { useContext, useRef } from 'react'
 
 const PlayList = ({ play }: { play: PlayListType }) => {
     const { isPlaying, setIsPlaying, currentAudioRef, setCurrentAudioRef, setCurrentSong } = useContext(MusicContext)
-
     const playMusic = (url: string, title: string) => {
         setCurrentSong(title);
         if (isPlaying && currentAudioRef) currentAudioRef.pause();
